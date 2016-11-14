@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Confirm your shipment</h1>
+    <p>
+      your parcel's stats:
+    </p>
+    <ul>
+      <li>weight: @Model.GetWeight()</li>
+      <li>height: @Model.GetHeight()</li>
+      <li>width: @Model.GetWidth()</li>
+      <li>length: @Model.GetLength()</li>
+      <li>volume: @Model.Volume()</li>
+      <li>cost: @Model.CostToShip()</li>
+    </ul>
+  </body>
+</html>
